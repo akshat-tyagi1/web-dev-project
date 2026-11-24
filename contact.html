@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Life Hub | Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="page-wrap">
+
+      <!-- HEADER -->
+      <header>
+        <div class="brand-pill">College Life Hub</div>
+        <div class="header-right">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="clubs.html">Student Clubs</a>
+            <a href="timetable.html">Campus Events</a>
+            <a href="resources.html">Study Resources</a>
+            <a href="contact.html" class="active">Contact Us</a>
+          </nav>
+          <button id="dark-mode-btn">🌙 Dark</button>
+        </div>
+      </header>
+
+      <!-- INFO ROW -->
+      <div class="info-row">
+        <span class="info-label">HAVE A QUESTION? WE'D LOVE TO HEAR FROM YOU</span>
+        <span class="info-label">GREATER NOIDA, INDIA</span>
+      </div>
+
+      <!-- PAGE HERO -->
+      <section class="page-hero">
+        <h1 class="page-h1">Contact Us</h1>
+      </section>
+
+      <main>
+
+        <h2>Send a Message</h2>
+        <p>
+          This is a demonstration form for the HTML project. It does not store or
+          send messages to a server.
+        </p>
+
+        <!-- Contact form: script.js handles validation and feedback -->
+        <form id="contact-form" action="#" method="get">
+
+          <div class="form-group">
+            <label for="name">Full name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="interest">Club of interest:</label>
+            <select id="interest" name="interest">
+              <option value="">Select a club</option>
+              <option value="CSI">CSI — Computer Society of India</option>
+              <option value="ACM">ACM — Association for Computing Machinery</option>
+              <option value="PULSE">PULSE</option>
+              <option value="ADVAITA">ADVAITA</option>
+              <option value="RIVAAZ">RIVAAZ</option>
+              <option value="BU Gamers">BU Gamers</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message here..."
+            ></textarea>
+            <!-- Character counter: script.js updates this as you type -->
+            <p id="char-counter" class="char-counter">0 / 300 characters</p>
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit" id="submit-btn">Submit</button>
+            <button type="reset" id="reset-btn">Clear Form</button>
+          </div>
+
+        </form>
+
+        <!-- Error / success messages: shown or hidden by script.js -->
+        <p id="form-error" class="form-error" style="display: none;"></p>
+        <p id="form-success" class="form-success" style="display: none;"></p>
+
+        <p>
+          Return to the <a href="index.html">home page</a> to explore the rest of the website.
+        </p>
+
+      </main>
+
+      <footer>
+        <p>&copy; 2026 COLLEGE LIFE HUB &nbsp;·&nbsp; A STUDENT PROJECT</p>
+      </footer>
+
+    </div>
+
+    <button id="back-to-top-btn" title="Go back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

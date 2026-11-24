@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Life Hub | Campus Events</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="page-wrap">
+
+      <!-- HEADER -->
+      <header>
+        <div class="brand-pill">College Life Hub</div>
+        <div class="header-right">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="clubs.html">Student Clubs</a>
+            <a href="timetable.html" class="active">Campus Events</a>
+            <a href="resources.html">Study Resources</a>
+            <a href="contact.html">Contact Us</a>
+          </nav>
+          <button id="dark-mode-btn">🌙 Dark</button>
+        </div>
+      </header>
+
+      <!-- INFO ROW -->
+      <div class="info-row">
+        <span class="info-label">UPCOMING EVENTS &amp; ACTIVITIES</span>
+        <span class="info-label">GREATER NOIDA, INDIA</span>
+      </div>
+
+      <!-- PAGE HERO -->
+      <section class="page-hero">
+        <h1 class="page-h1">Campus Events</h1>
+      </section>
+
+      <main>
+
+        <h2>Upcoming Events</h2>
+
+        <p>Here are some sample events that students can participate in.</p>
+
+        <!-- Filter dropdown: script.js shows/hides rows based on selection -->
+        <div class="filter-wrapper">
+          <label for="category-filter" class="mono-label">FILTER BY CATEGORY:</label>
+          <select id="category-filter">
+            <option value="All">All</option>
+            <option value="Technology">Technology</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Sports">Sports</option>
+            <option value="Creative Arts">Creative Arts</option>
+          </select>
+        </div>
+
+        <!-- Events table. data-category on each row lets JS filter them -->
+        <table id="events-table">
+          <thead>
+            <tr>
+              <th>Event Name</th>
+              <th>Date</th>
+              <th>Venue</th>
+              <th>Category</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-category="Technology">
+              <td>Technical Hackathon</td>
+              <td>15 November</td>
+              <td>Computer Lab</td>
+              <td><span class="badge">Technology</span></td>
+            </tr>
+            <tr data-category="Entertainment">
+              <td>Music Night</td>
+              <td>20 November</td>
+              <td>College Auditorium</td>
+              <td><span class="badge">Entertainment</span></td>
+            </tr>
+            <tr data-category="Sports">
+              <td>Sports Tournament</td>
+              <td>25 November</td>
+              <td>Sports Ground</td>
+              <td><span class="badge">Sports</span></td>
+            </tr>
+            <tr data-category="Creative Arts">
+              <td>Photography Contest</td>
+              <td>30 November</td>
+              <td>Main Campus</td>
+              <td><span class="badge">Creative Arts</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Why Participate in Campus Events?</h2>
+
+        <ul>
+          <li>Meet new people and make friends.</li>
+          <li>Develop teamwork and communication skills.</li>
+          <li>Explore new interests and hobbies.</li>
+          <li>Learn skills outside the classroom.</li>
+        </ul>
+
+        <h2>How to Participate</h2>
+
+        <ol>
+          <li>Choose an event that interests you.</li>
+          <li>Check the event details and date.</li>
+          <li>Contact the organisers for registration.</li>
+          <li>Attend the event and enjoy the experience.</li>
+        </ol>
+
+        <h2>Important Reminder</h2>
+
+        <p>
+          Event dates and venues on this page are examples. Check official college
+          announcements for actual details.
+        </p>
+
+        <p><a href="index.html">Back to Home</a></p>
+
+      </main>
+
+      <footer>
+        <p>&copy; 2026 COLLEGE LIFE HUB &nbsp;·&nbsp; A STUDENT PROJECT</p>
+      </footer>
+
+    </div>
+
+    <button id="back-to-top-btn" title="Go back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

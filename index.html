@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Life Hub - Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- PAGE-WRAP: The rounded cream container that holds all visible content -->
+    <div class="page-wrap">
+
+      <!-- =====================================================
+           HEADER: Pill site-name on the left, floating nav pill
+           on the right, dark-mode toggle beside it.
+           ===================================================== -->
+      <header>
+        <div class="brand-pill">College Life Hub</div>
+
+        <div class="header-right">
+          <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="clubs.html">Student Clubs</a>
+            <a href="timetable.html">Campus Events</a>
+            <a href="resources.html">Study Resources</a>
+            <a href="contact.html">Contact Us</a>
+          </nav>
+          <button id="dark-mode-btn">🌙 Dark</button>
+        </div>
+      </header>
+
+      <!-- =====================================================
+           HERO SECTION:
+           Full-screen studio landing screen holding:
+           1. Label row at the top
+           2. Giant wordmark filling the width in the middle
+           3. Bottom row with tagline statement left and "Scroll ↓" right
+           ===================================================== -->
+      <section class="hero">
+
+        <!-- Top: small uppercase monospace label row -->
+        <div class="info-row">
+          <span class="info-label">STUDENT GUIDE FOR BENNETT UNIVERSITY</span>
+          <span class="info-label">GREATER NOIDA, INDIA</span>
+        </div>
+
+        <!-- Middle: Giant wordmark spanning edge-to-edge on one line -->
+        <h1 class="hero-wordmark">College Life Hub</h1>
+
+        <!-- Bottom row: Tagline statement on left, Scroll hint on right -->
+        <div class="hero-bottom">
+          <div class="hero-tagline">
+            <p class="hero-line-plain">Make college</p>
+            <!-- "count." has a span for the thick orange-red underline -->
+            <p class="hero-line-accent">
+              <span class="accent-word">count.</span>
+            </p>
+          </div>
+          <div class="hero-scroll">
+            <span class="mono-label">SCROLL ↓</span>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- =====================================================
+           MAIN CONTENT
+           Everything else comes AFTER the hero section.
+           ===================================================== -->
+      <main>
+
+        <!-- Greeting row: comes after the hero with margin-top: 3vw -->
+        <div id="greeting-box" class="greeting-row">
+          <span id="greeting-text" class="mono-label">WELCOME</span>
+          <span id="date-text" class="mono-label"></span>
+        </div>
+
+        <h2>Welcome to College Life Hub</h2>
+
+        <p>
+          College is more than just attending classes and taking exams. It is a
+          place to develop new skills, meet people, explore interests, and prepare
+          for your future career.
+        </p>
+
+        <!-- Campus image: rounded, full-width, soft shadow -->
+        <img
+          id="home-image"
+          src="https://image-static.collegedunia.com/public/college_data/images/campusimage/1775734252DJI_0759.jpg"
+          alt="College Life"
+        />
+
+        <h2>Explore Our Website</h2>
+
+        <!-- Explore cards: 4 styled flexbox cards in a 2x2 grid -->
+        <div class="explore-cards">
+
+          <div class="explore-card">
+            <span class="card-number">01</span>
+            <strong class="card-title">Student Clubs</strong>
+            <p>Discover student societies and extracurricular activities at Bennett University.</p>
+          </div>
+
+          <div class="explore-card">
+            <span class="card-number">02</span>
+            <strong class="card-title">Campus Events</strong>
+            <p>Find upcoming events, activities, and college responsibilities.</p>
+          </div>
+
+          <div class="explore-card">
+            <span class="card-number">03</span>
+            <strong class="card-title">Study Resources</strong>
+            <p>Explore web development courses, tutorials, and documentation.</p>
+          </div>
+
+          <div class="explore-card">
+            <span class="card-number">04</span>
+            <strong class="card-title">Contact Us</strong>
+            <p>Share your interests or send us feedback through our student form.</p>
+          </div>
+
+        </div>
+
+        <h2>Make College Count</h2>
+
+        <p>
+          <i>Learning outside the classroom is just as important as learning inside it.</i>
+          Participate in activities, collaborate with others, and keep improving your skills.
+        </p>
+
+        <p><u>Start exploring</u> using the navigation links above.</p>
+
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <p>&copy; 2026 COLLEGE LIFE HUB &nbsp;·&nbsp; A STUDENT PROJECT</p>
+      </footer>
+
+    </div><!-- end .page-wrap -->
+
+    <!-- Back-to-top button: script.js shows it after scrolling -->
+    <button id="back-to-top-btn" title="Go back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

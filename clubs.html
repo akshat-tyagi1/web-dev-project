@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Life Hub | Student Clubs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="page-wrap">
+
+      <!-- HEADER -->
+      <header>
+        <div class="brand-pill">College Life Hub</div>
+        <div class="header-right">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="clubs.html" class="active">Student Clubs</a>
+            <a href="timetable.html">Campus Events</a>
+            <a href="resources.html">Study Resources</a>
+            <a href="contact.html">Contact Us</a>
+          </nav>
+          <button id="dark-mode-btn">🌙 Dark</button>
+        </div>
+      </header>
+
+      <!-- INFO ROW -->
+      <div class="info-row">
+        <span class="info-label">FIND PEOPLE WHO SHARE YOUR INTERESTS</span>
+        <span class="info-label">GREATER NOIDA, INDIA</span>
+      </div>
+
+      <!-- PAGE HERO (non-home version: smaller h1) -->
+      <section class="page-hero">
+        <h1 class="page-h1">Student Clubs</h1>
+      </section>
+
+      <main>
+
+        <h2>Explore Different Communities</h2>
+
+        <p>
+          Here are examples of student communities and the interests they
+          represent. Check the university's official club directory for current
+          details and recruitment announcements.
+        </p>
+
+        <!-- Search box: script.js filters cards as you type -->
+        <div class="search-box-wrapper">
+          <input type="text" id="club-search" placeholder="Search clubs..." />
+        </div>
+
+        <!-- Club cards container -->
+        <div id="clubs-container">
+
+          <div class="club-card">
+            <h3>CSI — Computer Society of India</h3>
+            <p>
+              A community for students interested in computing, technology,
+              programming, and professional development.
+            </p>
+          </div>
+
+          <div class="club-card">
+            <h3>ACM — Association for Computing Machinery</h3>
+            <p>
+              A computing-focused student community where members can explore
+              technical learning, problem-solving, and collaborative projects.
+            </p>
+          </div>
+
+          <div class="club-card">
+            <h3>PULSE</h3>
+            <p>
+              For students interested in organising events, coordinating activities,
+              and contributing to campus experiences.
+            </p>
+          </div>
+
+          <div class="club-card">
+            <h3>ADVAITA</h3>
+            <p>
+              A space for students interested in music, performance, and musical
+              collaboration.
+            </p>
+          </div>
+
+          <div class="club-card">
+            <h3>RIVAAZ</h3>
+            <p>
+              A community for students who enjoy dance, choreography, and stage
+              performances.
+            </p>
+          </div>
+
+          <div class="club-card">
+            <h3>BU Gamers</h3>
+            <p>
+              For students interested in gaming, friendly competition, and gaming
+              communities.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Shown by JS when no club matches the search -->
+        <p id="no-results-msg" style="display: none;">No clubs match your search.</p>
+
+        <hr />
+
+        <h2>Discover More About Student Clubs</h2>
+
+        <details>
+          <summary>What happens in a technical club?</summary>
+          <p>
+            Technical clubs organise coding competitions, hackathons, workshops,
+            technical events, and collaborative projects.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can beginners join student clubs?</summary>
+          <p>
+            Yes! Most clubs welcome beginners and provide opportunities to learn
+            new skills through activities and workshops.
+          </p>
+        </details>
+
+        <details>
+          <summary>How can I become a club member?</summary>
+          <p>
+            Students can participate in recruitment drives, attend club events,
+            and follow official announcements.
+          </p>
+        </details>
+
+        <hr />
+
+        <h2>Why Join a Club?</h2>
+
+        <ol>
+          <li>Meet students with similar interests.</li>
+          <li>Practise teamwork and communication.</li>
+          <li>Build practical skills outside the classroom.</li>
+          <li>Take part in campus events and projects.</li>
+        </ol>
+
+        <p>
+          For the latest official information, visit the
+          <a
+            href="https://www.bennett.edu.in/bennett-life/life-at-campus/club-and-societies/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Bennett University Clubs and Societies directory
+          </a>.
+        </p>
+
+      </main>
+
+      <footer>
+        <p>&copy; 2026 COLLEGE LIFE HUB &nbsp;·&nbsp; A STUDENT PROJECT</p>
+      </footer>
+
+    </div>
+
+    <button id="back-to-top-btn" title="Go back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
